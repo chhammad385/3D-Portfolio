@@ -34,14 +34,18 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
     setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      window.setTimeout(() => {
+        const headerOffset = 92;
+        const elementTop = element.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo({ top: elementTop, behavior: "smooth" });
+      }, 50);
     }
   };
 
   return (
     <header
       id="site-header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[60] pointer-events-auto isolate transition-all duration-300 ${
         scrolled
           ? "bg-[#030014]/85 backdrop-blur-md border-b border-indigo-950/40 py-4 shadow-lg shadow-black/20"
           : "bg-transparent py-6"
@@ -86,6 +90,7 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
         {/* Actions */}
         <div className="hidden md:flex items-center space-x-4">
           <button 
+            type="button"
             onClick={toggleTheme}
             className="p-2 rounded-full border border-indigo-950 hover:bg-indigo-950/40 transition-colors text-gray-400 hover:text-white cursor-pointer btn-header-toggle"
             aria-label="Toggle theme"
@@ -112,6 +117,7 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
             {theme === "light" ? <Moon className="w-5 h-5 text-indigo-500 animate-pulse" /> : <Sun className="w-5 h-5 text-amber-400" />}
           </button>
           <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 rounded-full border border-indigo-950 text-gray-400 hover:text-white cursor-pointer btn-header-toggle"
             aria-label="Toggle menu"
@@ -128,12 +134,13 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#030014]/95 border-b border-indigo-950/60 backdrop-blur-xl"
+            className="relative z-[60] md:hidden w-full overflow-hidden bg-[#030014]/95 border-b border-indigo-950/60 backdrop-blur-xl"
           >
             <div className="px-6 py-8 flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
+                  type="button"
                   onClick={() => handleScrollTo(item.id)}
                   className={`mobile-nav-link text-left text-base font-medium py-2 border-b border-indigo-950/20 cursor-pointer ${
                     activeSection === item.id
