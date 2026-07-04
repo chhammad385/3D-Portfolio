@@ -76,7 +76,7 @@ export default function Hero({ activeSection }: { activeSection?: string }) {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="flex items-center text-[2.7rem] sm:text-5xl md:text-[5.6rem] font-bold font-signature bg-gradient-to-r from-violet-300 via-violet-100 to-indigo-200 bg-clip-text text-transparent pb-1"
+            className="signature-title inline-flex items-center whitespace-nowrap px-3 pt-2 pb-4 text-[2.95rem] sm:text-[5.15rem] md:text-[5.95rem] tracking-wide leading-none bg-gradient-to-r from-violet-300 via-violet-100 to-indigo-200 bg-clip-text text-transparent"
               style={{ textShadow: "0 0 35px rgba(168,85,247,0.4)" }}
             >
               {nameLetters.map((char, index) => (
@@ -97,7 +97,7 @@ export default function Hero({ activeSection }: { activeSection?: string }) {
               animate={{ scaleX: 1, opacity: 1 }}
               style={{ originX: 0 }}
               transition={{ delay: 1.2, duration: 1.0, ease: "easeOut" }}
-              className="absolute bottom-2 left-2 h-[4px] bg-gradient-to-r from-violet-500 via-indigo-400 to-cyan-400 rounded-full shadow-[0_0_15px_rgba(168,85,247,0.9)] w-[55%] md:w-[78%]"
+              className="absolute bottom-0 left-2 h-[4px] bg-gradient-to-r from-violet-500 via-indigo-400 to-cyan-400 rounded-full shadow-[0_0_15px_rgba(168,85,247,0.9)] w-[55%] md:w-[73%]"
             />
           </div>
 

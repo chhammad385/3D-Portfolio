@@ -1,9 +1,10 @@
+@import "@fontsource/pacifico/400.css";
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Aptos Display", "Segoe UI Semibold", "Trebuchet MS", system-ui, sans-serif;
-  --font-signature: "Segoe Script", "Brush Script MT", "Lucida Handwriting", "Segoe Print", cursive;
+  --font-signature: "Pacifico", "Segoe Script", "Brush Script MT", "Lucida Handwriting", "Segoe Print", cursive;
   --font-mono: "Cascadia Mono", Consolas, ui-monospace, monospace;
 
   /* Custom Neon Glow Colors */
@@ -12,6 +13,12 @@
 }
 
 @layer utilities {
+  .signature-title {
+    font-family: var(--font-signature);
+    font-weight: 400;
+    font-synthesis: none;
+  }
+
   /* Scrollbar hide utility */
   .no-scrollbar::-webkit-scrollbar {
     display: none;

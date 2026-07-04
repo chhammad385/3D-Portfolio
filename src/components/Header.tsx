@@ -50,10 +50,10 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <div 
-          className="flex items-center space-x-1 cursor-pointer"
+          className="flex items-center space-x-1 cursor-pointer pl-2 pr-1"
           onClick={() => handleScrollTo("hero")}
         >
-          <span className="header-logo font-signature text-3xl font-bold bg-gradient-to-r from-violet-400 to-indigo-300 bg-clip-text text-transparent">
+          <span className="header-logo signature-title inline-block whitespace-nowrap px-1 py-1 leading-none text-3xl bg-gradient-to-r from-violet-400 to-indigo-300 bg-clip-text text-transparent">
             Hammad
           </span>
           <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse"></span>
