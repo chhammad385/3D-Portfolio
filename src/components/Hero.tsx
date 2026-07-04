@@ -174,7 +174,7 @@ export default function Hero({ activeSection }: { activeSection?: string }) {
             animate={{ opacity: 1, y: 0, x: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             whileHover={{ y: -5 }}
-            className="absolute -top-12 sm:top-4 -right-2 sm:-right-8 lg:-right-2 lg:translate-x-2 xl:translate-x-4 z-20 w-[220px] sm:w-[240px] scale-[0.85] sm:scale-100 origin-top-right bg-slate-950/80 backdrop-blur-xl border border-indigo-950 rounded-xl p-4 shadow-2xl shadow-black/60 font-mono text-left text-[11px]"
+            className="absolute -top-12 sm:top-4 right-2 sm:-right-8 lg:-right-2 lg:translate-x-2 xl:translate-x-4 z-20 w-[220px] sm:w-[240px] scale-[0.85] sm:scale-100 origin-top-right bg-slate-950/80 backdrop-blur-xl border border-indigo-950 rounded-xl p-4 shadow-2xl shadow-black/60 font-mono text-left text-[11px]"
           >
             <div className="flex items-center justify-between border-b border-indigo-950 pb-2 mb-2">
               <div className="flex space-x-1.5">

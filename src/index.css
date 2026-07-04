@@ -1,9 +1,17 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
 @import "@fontsource/pacifico/400.css";
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Aptos Display", "Segoe UI Semibold", "Trebuchet MS", system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-signature: "Pacifico", "Segoe Script", "Brush Script MT", "Lucida Handwriting", "Segoe Print", cursive;
   --font-mono: "Cascadia Mono", Consolas, ui-monospace, monospace;
 
@@ -118,11 +126,11 @@ html.light ::-webkit-scrollbar-thumb:hover {
 }
 
 html.light .glow-sphere-1 {
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, rgba(0,0,0,0) 70%) !important;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.12) 0%, rgba(0,0,0,0) 70%) !important;
 }
 
 html.light .glow-sphere-2 {
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(0,0,0,0) 70%) !important;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(0,0,0,0) 70%) !important;
 }
 
 html.light .bg-stars {
@@ -208,12 +216,45 @@ html.light [class*="text-gray-300"] {
 
 html.light .text-gray-400,
 html.light [class*="text-gray-400"] {
-  color: #64748b !important;
+  color: #475569 !important;
 }
 
 html.light .text-gray-500,
 html.light [class*="text-gray-500"] {
-  color: #94a3b8 !important;
+  color: #334155 !important;
+}
+
+html.light .text-slate-100,
+html.light [class*="text-slate-100"],
+html.light .text-slate-200,
+html.light [class*="text-slate-200"],
+html.light .text-slate-300,
+html.light [class*="text-slate-300"],
+html.light .text-slate-400,
+html.light [class*="text-slate-400"],
+html.light .text-slate-500,
+html.light [class*="text-slate-500"],
+html.light .text-zinc-100,
+html.light [class*="text-zinc-100"],
+html.light .text-zinc-200,
+html.light [class*="text-zinc-200"],
+html.light .text-zinc-300,
+html.light [class*="text-zinc-300"],
+html.light .text-zinc-400,
+html.light [class*="text-zinc-400"],
+html.light .text-zinc-500,
+html.light [class*="text-zinc-500"],
+html.light .text-stone-100,
+html.light [class*="text-stone-100"],
+html.light .text-stone-200,
+html.light [class*="text-stone-200"],
+html.light .text-stone-300,
+html.light [class*="text-stone-300"],
+html.light .text-stone-400,
+html.light [class*="text-stone-400"],
+html.light .text-stone-500,
+html.light [class*="text-stone-500"] {
+  color: #334155 !important;
 }
 
 /* Violet and Indigo text brand colors */
@@ -542,4 +583,5 @@ html.light .certificate-view-all h3 {
 html.light .certificate-view-all p {
   color: #475569 !important;
 }
+
 

@@ -1,0 +1,11 @@
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/HammadAvatar.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/Hero.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/index.css', LF will be replaced by CRLF the next time Git touches it
+ package-lock.json               | 20 [32m+++++++++++++++[m
+ package.json                    |  2 [32m++[m
+ src/components/HammadAvatar.tsx |  4 [32m+[m[31m--[m
+ src/components/Hero.tsx         |  2 [32m+[m[31m-[m
+ src/index.css                   | 54 [32m++++++++++++++++++++++++++++++++++++[m[31m-----[m
+ 5 files changed, 73 insertions(+), 9 deletions(-)

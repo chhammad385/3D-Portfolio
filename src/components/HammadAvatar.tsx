@@ -119,7 +119,7 @@ export default function HammadAvatar({ mode }: HammadAvatarProps) {
             exit={{ opacity: 0, scale: 0.85, y: 10 }}
             className={`avatar-dialogue absolute z-40 bg-[#080718]/95 border border-violet-500/50 backdrop-blur-xl px-3.5 py-2.5 sm:px-5 sm:py-3 rounded-2xl shadow-[0_10px_35px_rgba(139,92,246,0.25)] text-center cursor-pointer transition-all duration-300 hover:border-violet-400/80 hover:shadow-[0_10px_40px_rgba(139,92,246,0.45)] hover:scale-[1.03] active:scale-[0.98] ${
               isHero 
-                ? "-top-12 sm:-top-16 left-8 sm:-left-12 md:-left-16 lg:-left-12 max-w-[170px] sm:max-w-[250px]" 
+                ? "-top-14 -left-2 max-w-[128px] sm:-top-16 sm:-left-12 sm:max-w-[250px] md:-left-16 lg:-left-12" 
                 : mode === "contact"
                   ? "top-14 sm:top-18 left-1/2 -translate-x-1/2 w-[160px] sm:w-[240px] max-w-[220px] sm:max-w-[300px]"
                   : "-top-12 max-w-[170px] sm:max-w-[250px]"
@@ -127,7 +127,7 @@ export default function HammadAvatar({ mode }: HammadAvatarProps) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className={`avatar-dialogue-arrow absolute -bottom-2 w-4 h-4 bg-[#080718] border-r border-b border-violet-500/50 rotate-45 ${
-              isHero ? "right-10 sm:right-16 md:right-20 lg:right-16" : "left-1/2 -translate-x-1/2"
+              isHero ? "right-8 sm:right-16 md:right-20 lg:right-16" : "left-1/2 -translate-x-1/2"
             }`} />
             <p className="text-[10px] sm:text-xs text-white leading-relaxed font-sans font-medium">
               {currentDialogue}
