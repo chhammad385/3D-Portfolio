@@ -25,7 +25,7 @@ export default function Sidebar() {
     {
       id: "cv",
       icon: <Download className="w-5 h-5" />,
-      url: "/CV.pdf",
+      url: "/cv.pdf",
       label: "Download CV"
     }
   ];

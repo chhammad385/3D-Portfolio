@@ -98,7 +98,7 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
             {theme === "light" ? <Moon className="w-5 h-5 text-indigo-500 animate-pulse" /> : <Sun className="w-5 h-5 text-amber-400" />}
           </button>
           <a
-            href="/CV.pdf"
+            href="/cv.pdf"
             download="Muhammad_Hammad_CV.pdf"
             className="flex items-center space-x-2 px-5 py-2.5 rounded-full bg-indigo-950/20 hover:bg-violet-600 border border-violet-500/40 hover:border-violet-500 text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/20 cursor-pointer btn-header-cv"
           >
@@ -152,7 +152,7 @@ export default function Header({ activeSection, theme, toggleTheme }: HeaderProp
                 </button>
               ))}
               <a
-                href="/CV.pdf"
+                href="/cv.pdf"
                 download="Muhammad_Hammad_CV.pdf"
                 className="flex items-center justify-center space-x-2 w-full py-3 mt-4 rounded-xl bg-violet-600 hover:bg-violet-500 text-sm font-semibold text-white transition-colors cursor-pointer"
               >

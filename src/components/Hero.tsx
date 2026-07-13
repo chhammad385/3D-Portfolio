@@ -130,7 +130,7 @@ export default function Hero({ activeSection }: { activeSection?: string }) {
               View My Work
             </button>
             <a
-              href="/CV.pdf"
+              href="/cv.pdf"
               download="Muhammad_Hammad_CV.pdf"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-transparent hover:bg-violet-600/10 border border-violet-500/40 hover:border-violet-400 text-white font-semibold text-sm transition-all duration-300 hover:-translate-y-0.5 cursor-pointer btn-download-cv"
             >
